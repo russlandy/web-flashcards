@@ -1,5 +1,5 @@
-const btn = document.querySelector('.form-Q');
-const input = document.querySelector('.input');
+const btn = document.querySelector('.question_form');
+const input = document.querySelector('.question_input');
 
 btn.addEventListener('submit', async (event) => {
   event.preventDefault();
