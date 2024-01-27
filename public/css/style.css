@@ -201,3 +201,11 @@ h2 {
   justify-content: center;
   margin-top: 40px;
 }
+
+.card_wrong {
+  border: 2px solid #f00f0f;
+}
+
+.card_correct {
+  border: 2px solid rgb(4, 243, 4);
+}
