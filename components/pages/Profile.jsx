@@ -5,6 +5,7 @@ const Table = require("../Table");
 module.exports = function Profile({ user, topics }) {
   return (
     <Layout title={`страница пользователя: ${user.login}`}>
+
       <div className="wrapper_header">
         <div className="header">
           <h1>Flashcards</h1>

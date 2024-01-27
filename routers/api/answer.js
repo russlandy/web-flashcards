@@ -1,3 +1,4 @@
+
 const router = require("express").Router();
 const { Question, User } = require("../../db/models/index");
 
@@ -9,6 +10,7 @@ router.route("/:id").post(async (req, res) => {
     where: { topicID: Number(id) },
   });
   if (text === answer.answer) {
+
     const localLogin = res.app.locals.login;
     const { points } = await User.findOne({ where: { login: localLogin } });
     await User.update({ points: points + 1 }, { where: { login: localLogin } });

@@ -7,7 +7,7 @@ module.exports = function RoundStat({title, user}) {
         <div className='card-header'>
         <h1>Flashcards</h1>
         <div className='card-nav-bar'>
-          <a href='/username'>{user.login}</a>
+          <a href={`/profile/${user.id}`}>{user.login}</a>
           <a href='/logout'>logout</a>
           <a href='/'>home</a>
         </div>
