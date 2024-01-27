@@ -9,6 +9,7 @@ module.exports = function Layout({title, children}) {
             <link rel="stylesheet" href="/css/Layout.css" />
             <link rel="stylesheet" href="/css/RoundStat.css" />
             <link rel="stylesheet" href="/css/Profile.css" />
+            <link rel='stylesheet' href='/css/style.css' />
             <title>{title}</title>
         </head>
         <body>
@@ -17,3 +18,4 @@ module.exports = function Layout({title, children}) {
         </html>
     )
 }
+
