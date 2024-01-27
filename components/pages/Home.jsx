@@ -20,7 +20,7 @@ function Home({ title = 'Flashcards', topics }) {
           <div className='row-1'>
             {topics.map((topic) => {
               return (
-                <a href={`/${topic.title}`} key={topic.id}>
+                <a href={`/card/${topic.id}`} key={topic.id}>
                   {topic.title}
                 </a>
               );
