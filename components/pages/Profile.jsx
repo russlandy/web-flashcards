@@ -8,7 +8,6 @@ module.exports = function Profile({user, topics}) {
         <div className='card-header'>
         <h1>Flashcards</h1>
         <div className='card-nav-bar'>
-          <a href='/username'>{`${user.login}`}</a>
           <a href='/logout'>logout</a>
           <a href='/'>home</a>
         </div>

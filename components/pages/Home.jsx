@@ -1,7 +1,7 @@
 const React = require('react');
 const Layout = require('../Layout');
 
-function Home({ title = 'Flashcards', topics }) {
+function Home({ title = 'Flashcards', topics, user }) {
   return (
     <Layout title={title}>
       <div className='wrapper_header'>
@@ -11,6 +11,7 @@ function Home({ title = 'Flashcards', topics }) {
             <a href='/regPage'>register</a>
             <a href='/login'>login</a>
             <a href='/'>home</a>
+            <a href={`/profile/${user}`}>Profile</a>
           </div>
         </div>
       </div>
@@ -20,7 +21,7 @@ function Home({ title = 'Flashcards', topics }) {
           <div className='row-1'>
             {topics.map((topic) => {
               return (
-                <a href={`/${topic.title}`} key={topic.id}>
+                <a href={`/card/${topic.id}`} key={topic.id}>
                   {topic.title}
                 </a>
               );

@@ -4,6 +4,7 @@ const { Question, Topic } = require('../../db/models');
 
 router.get('/:id', async (req, res) => {
   const { id } = req.params;
+  const user = req.app.locals.login
   const questions = await Question.findAll({
     raw: true,
     where: { topicID: Number(id) },
@@ -11,7 +12,7 @@ router.get('/:id', async (req, res) => {
       model: Topic,
     },
   });
-  const page = res.renderComponent(Card, { questions });
+  const page = res.renderComponent(Card, { questions, user });
   res.send(page);
 });
 

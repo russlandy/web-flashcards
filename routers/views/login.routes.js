@@ -11,14 +11,15 @@ router.get("/", (req, res) => {
 router.post("/", async (req, res) => {
   const login = req.body.login;
   const password = req.body.password;
-  console.log(login, password);
+  const user = await User.findOne({where: {login}})
   try {
     const loginCheck = await User.findAll({
       raw: true,
       where: { login },
     });
-    console.log("logincheck ", loginCheck);
     if (loginCheck && loginCheck[0].password === password) {
+      res.app.locals.login = login;
+      res.app.locals.id = loginCheck[0].id;
       res.redirect("/");
     } else {
       res.send("Login or password not true");
