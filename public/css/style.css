@@ -168,3 +168,11 @@ h2 {
   background-color: #299886;
   border-radius: 10px;
 }
+
+.card_wrong {
+  border: 2px solid #f00f0f;
+}
+
+.card_correct {
+  border: 2px solid rgb(4, 243, 4);
+}
