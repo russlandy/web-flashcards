@@ -10,7 +10,7 @@ function Card({ questions = [] }) {
         <div className='card-nav-bar'>
           <a href='/username'>username</a>
           <a href='/logout'>logout</a>
-          <a href='/home'>home</a>
+          <a href='/'>home</a>
         </div>
       </div>
       <div>

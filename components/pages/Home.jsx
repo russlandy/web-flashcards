@@ -10,7 +10,7 @@ function Home({ title = "Flashcards" }) {
           <div className="nav-bar">
             <a href="/regPage">register</a>
             <a href="/login">login</a>
-            <a href="/home">home</a>
+            <a href="/">home</a>
           </div>
         </div>
       </div>
