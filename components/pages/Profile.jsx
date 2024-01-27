@@ -4,6 +4,14 @@ const Layout = require("../Layout")
 module.exports = function Profile({title = "User#"}) {
     return( 
     <Layout title={title}>
+        <div className='card-header'>
+        <h1>Flashcards</h1>
+        <div className='card-nav-bar'>
+          <a href='/username'>username</a>
+          <a href='/logout'>logout</a>
+          <a href='/'>home</a>
+        </div>
+      </div>
         <div className="wrap">
         <h1>(User.name)</h1>
         <h4>(round.title)</h4>
