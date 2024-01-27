@@ -1,7 +1,7 @@
-const btn = document.querySelector(".question_form");
+const btn = document.querySelectorAll(".question_form");
 const input = document.querySelector(".question_input");
 
-btn.addEventListener("submit", async (event) => {
+btn.forEach(button => {button.addEventListener("submit", async (event) => {
   event.preventDefault();
   try {
     const body = { text: event.target.querySelector("input").value };
@@ -23,4 +23,4 @@ btn.addEventListener("submit", async (event) => {
   } catch (e) {
     console.error(e);
   }
-});
+})});
