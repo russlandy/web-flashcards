@@ -1,7 +1,27 @@
+.wrapper_header {
+  background-color: #5ec0d1;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  color: #2c1185;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.wrapper_cards {
+  max-width: 1440px;
+  margin: 40px auto;
 }
 
 .nav-bar {
@@ -13,8 +33,11 @@
 .nav-body {
   display: flex;
   justify-content: space-between;
-  margin-left: 20px;
-  margin-left: 20px;
+  margin: 20px 60px;
+}
+
+.nav-body a:hover {
+  color: #0084a9;
 }
 
 .row-1 {
@@ -82,7 +105,7 @@ h2 {
   height: 40px;
   border: none;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding-left: 10px;
 }
 
