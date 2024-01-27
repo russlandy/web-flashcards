@@ -1,21 +1,20 @@
 const React = require("react");
 const Layout = require("../Layout")
 
-module.exports = function RoundStat({title = "round#"}) {
-    return( 
+module.exports = function RoundStat({title, user}) {
+  return( 
     <Layout title={title}>
         <div className='card-header'>
         <h1>Flashcards</h1>
         <div className='card-nav-bar'>
-          <a href='/username'>username</a>
+          <a href='/username'>{user.login}</a>
           <a href='/logout'>logout</a>
-          <a href='/home'>home</a>
+          <a href='/'>home</a>
         </div>
       </div>
         <div className="wrap">
-        <h1>(round.title)</h1>
-        <h4>(round.answer)</h4>
-        <h5>(round.text)</h5>
+        <div></div>
+        <div>You completed a round of World Capitals. You answered {user.points}/(все кол-во вопросов) cards correctly on the first try. You submitted (что то) total guesses before each card was answered correctly</div>
         </div>
 
     </Layout>
