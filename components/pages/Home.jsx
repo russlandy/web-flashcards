@@ -17,17 +17,19 @@ function Home({ title = 'Flashcards', topics, user }) {
           </div>
         </div>
       </div>
-      <div className="wrapper_cards">
-        <h2>Flashcard Decks</h2>
-        <div className="nav-body">
-          <div className="row-1">
-            {topics.map((topic) => {
-              return (
-                <a href={`/card/${topic.id}`} key={topic.id}>
-                  {topic.title}
-                </a>
-              );
-            })}
+      <div className="main_wrapper">
+        <div className="wrapper_cards">
+          <h2>Flashcard Decks</h2>
+          <div className="nav-body">
+            <div className="row-1">
+              {topics.map((topic) => {
+                return (
+                  <a href={`/card/${topic.id}`} key={topic.id}>
+                    {topic.title}
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
