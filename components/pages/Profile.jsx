@@ -5,12 +5,11 @@ const Table = require("../Table");
 module.exports = function Profile({ user, topics }) {
   return (
     <Layout title={`страница пользователя: ${user.login}`}>
-
       <div className="wrapper_header">
         <div className="header">
           <h1>Flashcards</h1>
           <div className="card-nav-bar">
-            <a href="/username">{`${user.login}`}</a>
+            <a href={`/profile/${user.id}`}>{`${user.login}`}</a>
             <a href="/logout">logout</a>
             <a href="/">home</a>
           </div>

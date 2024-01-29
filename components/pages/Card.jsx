@@ -9,7 +9,7 @@ function Card({ questions, user }) {
       <div className='card-header'>
         <h1>Flashcards</h1>
         <div className='card-nav-bar'>
-          <a href={`/profile/${user}`}>{user}</a>
+          <a href={`/profile/${user.id}`}>{user.login}</a>
           <a href='/logout'>logout</a>
           <a href='/'>home</a>
           </div>
